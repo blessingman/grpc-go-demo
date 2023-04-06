@@ -1,14 +1,6 @@
 package main
 
-import (
-	"context"
-	"io"
-	"log"
-
-	pb "github.com/blessingman/grpc-go-demo/proto"
-)
-
-func сallSayHelloServerStream(client pb.GreetServiceClient, names *pb.NamesList) {
+/* func сallSayHelloServerStream(client pb.GreetServiceClient, names *pb.NamesList) {
 	log.Printf("Streaming started")
 
 	stream, err := client.SayHelloServerStreaming(context.Background(), names)
@@ -28,3 +20,4 @@ func сallSayHelloServerStream(client pb.GreetServiceClient, names *pb.NamesList
 	}
 	log.Printf("Steaming finished")
 }
+*/
