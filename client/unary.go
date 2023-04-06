@@ -1,6 +1,14 @@
 package main
 
-/* func callSayHello(client pb.GreetServiceClient) {
+import (
+	"context"
+	"log"
+	"time"
+
+	pb "github.com/blessingman/grpc-go-demo/proto"
+)
+
+func callSayHello(client pb.GreetServiceClient) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
@@ -10,4 +18,3 @@ package main
 	}
 	log.Printf("%s", res.Message)
 }
-*/
